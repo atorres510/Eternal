@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Tile : MonoBehaviour
 {
+    //isPassable may change to an integer value to allow more flexibility of tiles.
     bool isPassable;
     bool isOccupied;
     int x, y;
