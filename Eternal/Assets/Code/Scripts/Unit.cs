@@ -4,7 +4,7 @@ using System.Collections;
 public class Unit : MonoBehaviour
 {
     //Units will hold all of the stats of a character.
-
+    Tile currentLocation;
 	// Use this for initialization
 	void Start()
     {
@@ -16,4 +16,19 @@ public class Unit : MonoBehaviour
     {
 	    
 	}
+
+    void Attack(Unit target)
+    {
+        
+    }
+
+    void Move()
+    {
+        //Set your current location to no longer be occupied.
+        currentLocation.setIsOccupied();
+        //Move
+
+        //Set your current location to be occupied.
+        currentLocation.setIsOccupied();
+    }
 }
